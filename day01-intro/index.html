@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 01 - JAMStack Architecture</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/simple.css" id="theme">
+  <link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/a11y-light.css">
+  <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,500|Work+Sans:400,700">
+  <link rel="stylesheet" href="../static/slides.css">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section id="landing">
+        <h2>Day 01 - JAMStack Architecture</h2>
+        <p>
+          Welcome to part 1 / 3 workshop series on building documentation sites
+          using JAMStack architecture.
+        </p>
+      </section>
+      
+      <section id="intro">
+        <h1>Intro - Whoami</h1>
+        <ul>
+          <li>I am a Coach @MLH</li>
+          <li>I also teach CS and robotics for grades 6-12</li>
+          <li>I like Star Wars, indie games, and lettuce</li>
+        </ul>
+        <img src="../static/AAA Ryan Lay.png" alt="mlh portrait" width="400" style="float:right; margin-left: 20px;">
+      </section>
+      
+      <section id="fyi">
+        <section>
+          <h2>What type of workshop is this?</h2>
+          <ul>
+            <li>First day is less coding, more templates + learning resources</li>
+            <li>Workshops will support each other, but 100% attendance is not mandatory!</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Technical things we'll do today</h2>
+          <ul>
+            <li>Build your own website with <code>0</code> code using templates</li>
+            <li>Learn how to prototype like a designer with tldraw + penpot</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Agenda</h2>
+          <ul>
+            <li>What is the JAMStack architecture</li>
+            <li>What is the learning path for this pattern</li>
+            <li>Designing our own documentation website</li>
+          </ul>
+        </section>
+        <section>
+          <h2>No need to take notes!</h2>
+          <p>
+            This slide deck and all the resources in it will be available to you
+            via the MLH discord server in the #announcements channel.
+          </p>
+        </section>
+      </section>
+
+      <section>
+        <section id="JAMStack" data-background-iframe="https://jamstack.org/">
+        </section>
+        <section class="heading-only">
+          <blockquote>
+            <p>Architectural pattern that separates content from experience</p>
+          </blockquote>
+          <img src="https://i.imgflip.com/95zkfq.jpg" alt="drake meme. 'writing in html' vs 'writing in markdown'" width="700px">
+        </section>
+        <section class="heading-only">
+          <h2>DRY - <strong>D</strong>on't <strong>R</strong>epeat <strong>Y</strong>ourself</h2>
+          <ul>
+            <li>Avoids repeating code</li>
+            <li>Building with resuable components</li>
+            <li>Can get complicated, but frameworks can help with this</li>
+          </ul>
+        </section>
+        <section data-background-iframe="https://excalidraw.com/#json=B3a8QCxYIg-Fe4nV7x0gL,6E_5nFlkCpkwydRVJoloyw"></section>
+        <section>
+          <h2>Quick crash course on types of web development</h2>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/EPir6uxr1o8?si=ZzV3iBJqa_uO5qdO" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <section>
+          <h2>Here's an even shorter highlight</h2>
+          <p>Few types of websites</p>
+          <ul>
+            <li>MPA - Multi-page-application: server sends web files but full page reloads</li>
+            <li>SPA - Single-page-application: browser builds web files but slower</li>
+            <li>Hybrid: best of both?</li>
+          </ul>
+          <p>Why use a meta-framework</p>
+          <ul>
+            <li>hybrid applications</li>
+            <li>hydration optimization</li>
+            <li>emphasis on templating</li>
+          </ul>
+          <p>Why learn webdev with a meta-framework?</p>
+          <ul>
+            <li>43.5% of all websites run on WordPress <cite><a href="https://w3techs.com/technologies/details/cm-wordpress">W3Techs</a></cite></li>
+            <li>Building static sites can take you far</li>
+            <li>Better than learning vanilla where you can learn bad patterns</li>
+          </ul>
+        </section>
+        <section>
+          <blockquote>
+            <p>
+              Site generators are tools that take content and templates as 
+              input and generate static HTML files as output. They allow 
+              developers to build websites that are fast, secure, and easy to 
+              deploy by pre-rendering pages at build time, rather than 
+              generating them on the fly with each request.
+            </p>
+          </blockquote>
+        </section>
+        <section data-background-iframe="https://jamstack.org/generators/" data-background-interactive></section>
+        <section>
+          <h2>Which one are we going to build?</h2>
+          <p>
+            <em>
+              DISCLAIMER: I personally have only played around with a few of 
+              these: Astro, Docusaurus, and 11ty. Ultimately, it doesn't hurt 
+              to try out any of the meta-frameworks that seem interseting to you.
+            </em>
+          </p>
+          <ol>
+            <li><a href="https://docusaurus.io/docs/playground">Docusaurus</a>: fully-featured out of the box</li>
+            <li><a href="https://www.11ty.dev/docs/starter/">11ty</a>: fast, lightweight, easy mental model</li>
+            <li><a href="https://docs.astro.build/en/tutorial/0-introduction/">Astro</a>: use any component framework + hip one</li>
+          </ol>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h2>Resources for learning web dev</h2>
+          <p><cite><a href="https://roadmap.sh/">Roadmap.sh</a></cite>: FOSS learning roadmaps. go here to figure out roughly what order you should learn everything in</p>
+          <p><cite><a href="https://www.theodinproject.com/">The Odin Project</a></cite>: FOSS bootcamp with assignments and stuff</p>
+        </section>
+        <section>
+          <h2>Personal roadmap recommendation for JAMStack</h2>
+          <ol>
+            <li>Pick a tech stack thats popular to get more support <cite><a href="https://survey.stackoverflow.co/2024/technology/">stackoverflow</a></cite></li>
+            <li>Learn the anatomy of an HTML object</li>
+            <li>Learn the anatomy of a CSS selector, but start by using somebody else's style <cite><a href="https://picocss.com/">picocss</a></cite></li>
+            <li>Learn how to handle the DOM with JS</li>
+            <li>Learn a templating language</li>
+            <li>Learn a meta-framework</li>
+            <li>Learn a component framework</li>
+          </ol>
+        </section>
+        <section>
+          <blockquote>
+            <p>Most of React's "problems" are just people being bad at JavaScript</p>
+            <cite><a href="https://x.com/t3dotgg/status/1830452181834850596">Theo - t3.gg</a></cite>
+          </blockquote>
+        </section>
+        <section>
+          <h2>Debugging</h2>
+          <p>The key to debugging web dev bugs is a simple 3 step process</p>
+          <ol>
+            <li>Figure out where problems can come from</li>
+            <li>Identify the problems</li>
+            <li>Solving the problem (probably by going to documentation first)</li>
+          </ol>
+        </section>
+        <section>
+          <p>Bonus tips on FOSS and job-seeking</p>
+          <ul>
+            <li>Get practice on large code bases by building FOSS projects</li>
+            <li>Read techincal blogs of places you want to work at</li>
+            <li>Look at FOSS projects of a company to get familar with their style</li>
+            <li>There's a lot of resources on github, just search through it sometimes</li>
+            <li>Student developer pack is super cool btw (also has some stuff)</li>
+          </ul>
+        </section>
+      </section>
+
+      <section>
+        <h2>That's pretty much it for JAMStack</h2>
+        <p>Stick around if you want to learn how to do FOSS design work</p>
+        <ul>
+          <li><a href="https://excalidraw.com/">Excalidraw</a></li>
+          <li><a href="https://www.tldraw.com/">Tldraw</a></li>
+          <li><a href="https://penpot.app/">Penpot</a></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+  
+  <div id="scripts">
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script>
+      Reveal.initialize({
+        plugins: [RevealMarkdown],
+      });
+    </script>
+    <script>
+        Reveal.initialize({
+            width: 1280,
+            height: 720,
+            hash: true,
+            center: false,
+            slideNumber: true,
+            showNotes: false,
+            margin: 0.1,
+            preloadIframes: true,
+            autoPlayMedia: true,
+            plugins: [RevealHighlight, RevealMenu],
+            pdfSeparateFragments: true
+        });
+        window.highlightJsBadge();
+    </script>
+  </div>
+</body>
+</html>
