@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 01 - JAMStack Architecture</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/simple.css" id="theme">
+  <link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/a11y-light.css">
+  <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,500|Work+Sans:400,700">
+  <link rel="stylesheet" href="/static/slides.css">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section id="landing">
+        <h2>Day 01 - Creating a Unique Portfolio</h2>
+        <p>
+          Welcome to part 1 of building a unique portfolio! Today we'll be 
+          learning how to identify your brand identity.
+        </p>
+        <p>Remember to check in at <cite><a href="https://events.mlh.io/events/11950">events.mlh.io/events/11950</a></cite>!</p>
+      </section>
+      
+      <section id="intro">
+        <h1>Intro - Whoami</h1>
+        <ul>
+          <li>I am a Coach @MLH</li>
+          <li>I also teach CS and robotics for grades 6-12</li>
+          <li>I like Star Wars, indie games, and lettuce</li>
+        </ul>
+        <img src="/static/AAA Ryan Lay.png" alt="mlh portrait" width="400" style="float:right; margin-left: 20px;">
+      </section>
+      
+      <section id="fyi">
+        <section>
+          <h2>What type of workshop is this?</h2>
+          <ul>
+            <li>First day is less coding, more templates + learning resources</li>
+            <li>Workshops will support each other, but 100% attendance is not mandatory!</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Technical things we'll do today</h2>
+          <ul>
+            <li>Learn how to craft your brand identity</li>
+            <li>Learn how to prototype like a designer with tldraw + figma</li>
+            <li>
+              <p>Learn how to add cool libraries like:</p>
+              <ul>
+                <li><cite><a href="https://p5js.org/">P5</a></cite></li>
+                <li><cite><a href="https://swapy.tahazsh.com/">Swapy</a></cite></li>
+                <li><cite><a href="https://revealjs.com/">Reveal</a></cite></li>
+                <li><cite><a href="https://reactflow.dev/">Reactflow</a></cite></li>
+                <li><cite><a href="https://runmercury.com/">Mercury Framework</a></cite></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Agenda</h2>
+          <ul>
+            <li>Looking at cool portfolio sites</li>
+            <li>Classifying cool portfolio sites</li>
+            <li>Identifying what makes us unique</li>
+            <li>Some cool libraries to make interactions cool</li>
+            <li>Actually building a small thing with each library</li>
+          </ul>
+        </section>
+        <section>
+          <h2>No need to take notes!</h2>
+          <p>
+            This slide deck and all the resources in it will be available to you
+            via the MLH discord server in the #announcements channel.
+          </p>
+        </section>
+      </section>
+      
+      <section>
+        <section>
+          <h2>Looking at cool portfolio sites</h2>
+          <p>Looking for:</p>
+          <ul>
+            <li>Can we tell what they do professionally?</li>
+            <li>Can we see what they're interested in / like as a person?</li>
+            <li>Am I going to remember this experience?</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Develoepr Portfolios</h2>
+          <ul>
+            <li><a href="https://www.taniarascia.com/">https://www.taniarascia.com/</a></li>
+            <li><a href="https://www.mackenziechild.me/">https://www.mackenziechild.me/</a></li>
+            <li><a href="https://www.ethanchng.com/">https://www.ethanchng.com/</a></li>
+            <li><a href="https://www.seyityilmaz.com/">https://www.seyityilmaz.com/</a></li>
+            <li><a href="https://www.josephz.me/">https://www.josephz.me/</a></li>
+            <li><a href="https://www.pixeljess.com/">https://www.pixeljess.com/</a></li>
+            <li><a href="https://ncase.me/">https://ncase.me/</a></li>
+            <li><a href="https://bruno-simon.com/">https://bruno-simon.com/</a></li>
+          </ul>
+          </section>
+        <section>
+          <h2>Types of Portfolio Layouts</h2>
+          <article>
+            <p>
+              Whiteboarding time! I'll backfill this slide deck with the 
+              categories and a link to the whiteboard afterwards.
+            </p>
+          </article>
+        </section>
+        <section>
+          <h2>Design Trends</h2>
+          <ul>
+            <li>Brutalism / Neo-Brutalism</li>
+            <li>Neo Morphism</li>
+            <li>Skeuomorphism</li>
+            <li>Flat Design</li>
+            <li>Typography</li>
+            <li>Glassmorphism</li>
+            <li>Animation / Motion Design</li>
+            <li>Illustration + 3D Design</li>
+            <li>Minimalism</li>
+            <li>Bauhaus</li>
+            <li>Bento</li>
+            <li>Swiss Design</li>
+          </ul>
+        </section>
+      </section>
+      
+      <section>
+        <section>
+          <h2>Identifying what makes us unique</h2>
+          <p>How to craft your creative identity</p>
+        </section>
+        <section>
+          <h2>"How to find your style</h2>
+          <p>By: <a href="https://www.andyjpizza.com/">Andy J. Pizza</a></p>
+          <ul>
+            <li>
+              <p>Create a collection of who you are</p>
+              <ul>
+                <li>Identity</li>
+                <li>Taste</li>
+                <li>Experiments</li>
+                <li>Experiences</li>
+              </ul>
+            </li>
+            <li>Pick an influence and an identity</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Designing our own</h2>
+          <article>
+            <p>Quick disclaimer, I started ahead of time hehe</p>
+            <cite><a href="https://www.figma.com/board/f9JSEkjlrLdm0PtCB28Dge/Personal-Site?node-id=0-1&node-type=canvas&t=VFLRnD4lGvzHPIkG-0">FigJam</a></cite>
+            <cite><a href="https://www.figma.com/design/99wqcfY48Dx9iasEHmFGw5/Personal-Brand?node-id=11-2&t=vQ1dbMBK4rJiDD3M-1">Figma</a></cite>
+          </article>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h2>Cool libraries revisited!</h2>
+          <ul>
+            <li><cite><a href="https://p5js.org/">P5</a></cite></li>
+            <li><cite><a href="https://swapy.tahazsh.com/">Swapy</a></cite></li>
+            <li><cite><a href="https://revealjs.com/">Reveal</a></cite></li>
+            <li><cite><a href="https://reactflow.dev/">Reactflow</a></cite></li>
+            <li><cite><a href="https://runmercury.com/">Mercury Framework</a></cite></li>
+          </ul>
+        </section>
+        <section>
+          <h2>Sandboxes</h2>
+          <p>Learning a new library? Build a mini-project following their tutorial</p>
+          <ul>
+            <li>Working prototype to refer back to</li>
+            <li>Avoid tutorial hell</li>
+            <li>Building something small that is beyond the tutorial</li>
+            <li>Don't like it? Don't use it.</li>
+          </ul>
+        </section>
+      </section>
+
+    </div>
+  </div>
+  
+  <div id="scripts">
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script>
+      Reveal.initialize({
+        plugins: [RevealMarkdown],
+      });
+    </script>
+    <script>
+        Reveal.initialize({
+            width: 1280,
+            height: 720,
+            hash: true,
+            center: false,
+            slideNumber: true,
+            showNotes: false,
+            margin: 0.1,
+            preloadIframes: true,
+            autoPlayMedia: true,
+            plugins: [RevealHighlight, RevealMenu],
+            pdfSeparateFragments: true
+        });
+        window.highlightJsBadge();
+    </script>
+  </div>
+</body>
+</html>
