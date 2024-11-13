@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 01 - JAMStack Architecture</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/simple.css" id="theme">
+  <link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/a11y-light.css">
+  <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,500|Work+Sans:400,700">
+  <link rel="stylesheet" href="/static/slides.css">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section id="landing">
+        <h2>Day 03 - Creating Animations with P5</h2>
+        <p>
+          Welcome to part 1 of building animations for your portfolio! Today 
+          we'll be building animations with p5. 
+        </p>
+        <p>Remember to check in at <cite><a href="https://events.mlh.io/events/11983">https://events.mlh.io/events/11983</a></cite>!</p>
+      </section>
+      
+      <section id="intro">
+        <h1>Intro - Whoami</h1>
+        <ul>
+          <li>I am a Coach @MLH</li>
+          <li>I also teach CS and robotics for grades 6-12</li>
+          <li>I like Star Wars, indie games, and lettuce</li>
+        </ul>
+        <img src="/static/AAA Ryan Lay.png" alt="mlh portrait" width="400" style="float:right; margin-left: 20px;">
+      </section>
+      
+      <section id="fyi">
+        <section>
+          <h2>What type of workshop is this?</h2>
+          <ul>
+            <li>Today we'll be building animations with p5!</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Technical things we'll do today</h2>
+          <ul>
+            <li>Learn how to design and build animations in p5</li>
+            <li>Learn how to integrate </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Agenda</h2>
+          <ul>
+            <li>Learn the ropes of p5 by building a simple animation</li>
+            <li>Integrating p5 into an existing website</li>
+          </ul>
+        </section>
+        <section>
+          <h2>No need to take notes!</h2>
+          <p>
+            This slide deck and all the resources in it will be available to you
+            via the MLH discord server in the #announcements channel.
+          </p>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h2>Resources from the workshop</h2>
+        </section>
+      </section>
+
+    </div>
+  </div>
+  
+  <div id="scripts">
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js-menu@2.1.0/menu.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script>
+      Reveal.initialize({
+        plugins: [RevealMarkdown],
+      });
+    </script>
+    <script>
+        Reveal.initialize({
+            width: 1280,
+            height: 720,
+            hash: true,
+            center: false,
+            slideNumber: true,
+            showNotes: false,
+            margin: 0.1,
+            preloadIframes: true,
+            autoPlayMedia: true,
+            plugins: [RevealHighlight, RevealMenu],
+            pdfSeparateFragments: true
+        });
+        window.highlightJsBadge();
+    </script>
+  </div>
+</body>
+</html>
